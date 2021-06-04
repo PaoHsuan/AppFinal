@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".RegisterActivity">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -29,19 +28,19 @@
             android:textSize="24sp" />
 
         <Button
-            android:id="@+id/signin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/pwd"
-            android:text="登入" />
-
-        <Button
             android:id="@+id/register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/signin"
-            android:text="去註冊" />
+            android:layout_below="@id/pwd"
+            android:text="註冊" />
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register"
+            android:text="去登入" />
 
     </RelativeLayout>
-</RelativeLayout>
 
+</RelativeLayout>

@@ -28,24 +28,28 @@ public class MainActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                String nametext = name.getText().toString();
-                String pwdtext = password.getText().toString();
-                Boolean checkinsertdata = DB.insertData(nametext, pwdtext);
-
-                if(checkinsertdata == true) {
-                    Toast.makeText(MainActivity.this, "Registered success", Toast.LENGTH_SHORT).show();
-                    Log.d("Debug", "Success register");
-                }
-                else{
-                    Toast.makeText(MainActivity.this, "Registered failed", Toast.LENGTH_SHORT).show();
-                }
+                Intent intent = new Intent(getApplicationContext(), RegisterActivity.class);
+                startActivity(intent);;
             }
         });
         signin.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
-                startActivity(intent);;
+            public void onClick(View v) {
+                String user = name.getText().toString();
+                String pass = password.getText().toString();
+                if(user.equals("")||pass.equals(""))
+                    Toast.makeText(MainActivity.this, "Please enter all fields", Toast.LENGTH_SHORT).show();
+                else{
+                    Boolean checkuserpass = DB.checkusernamepassword(user, pass);
+                    if(checkuserpass == true) {
+                        Log.d("Debuggfff", "true");
+                        Toast.makeText(MainActivity.this, "Sign in successful", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                        startActivity(intent);
+                    }else{
+                        Toast.makeText(MainActivity.this, "Failed", Toast.LENGTH_SHORT).show();
+                    }
+                }
             }
         });
     }
