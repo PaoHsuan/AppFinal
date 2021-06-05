@@ -13,13 +13,11 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.loginsqlite.R;
-import com.example.loginsqlite.databinding.FragmentNotificationsBinding;
-import com.example.loginsqlite.ui.Menu.MenuViewModel;
+
 
 public class UserFragment extends Fragment {
 
     private com.example.loginsqlite.ui.User.UserViewModel UserViewModel;
-    private FragmentNotificationsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -39,9 +37,4 @@ public class UserFragment extends Fragment {
         return root;
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
-    }
 }

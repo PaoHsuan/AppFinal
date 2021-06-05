@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class RegisterActivity extends AppCompatActivity {
-    EditText name, password;
+    EditText name, password,sex, birthday, nickname, type;
     Button register, signin;
     DBHelper DB;
 
@@ -21,6 +21,10 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
         name = findViewById(R.id.name);
         password = findViewById(R.id.pwd);
+        sex = findViewById(R.id.sex);
+        birthday = findViewById(R.id.birth);
+        nickname = findViewById(R.id.nickname);
+        type = findViewById(R.id.type);
         register = findViewById(R.id.register);
         signin = findViewById(R.id.signin);
         DB = new DBHelper(this);

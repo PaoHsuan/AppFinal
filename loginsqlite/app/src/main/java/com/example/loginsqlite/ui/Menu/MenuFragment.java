@@ -13,12 +13,11 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.loginsqlite.R;
-import com.example.loginsqlite.databinding.FragmentNotificationsBinding;
+
 
 public class MenuFragment extends Fragment {
 
     private MenuViewModel MenuViewModel;
-    private FragmentNotificationsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -38,9 +37,5 @@ public class MenuFragment extends Fragment {
         return root;
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
-    }
+
 }

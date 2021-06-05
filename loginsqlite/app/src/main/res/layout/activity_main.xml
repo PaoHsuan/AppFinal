@@ -11,6 +11,24 @@
         android:layout_height="match_parent"
         tools:context=".sqliteapplication">
 
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pwd"
+            android:background="@drawable/btn_type"
+            android:text="登入"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signin"
+            android:background="@drawable/btn_type"
+            android:text="去註冊"
+            android:textColor="@color/white" />
+
         <EditText
             android:id="@+id/name"
             android:layout_width="match_parent"
@@ -27,20 +45,6 @@
             android:hint="密碼"
             android:inputType="textPassword"
             android:textSize="24sp" />
-
-        <Button
-            android:id="@+id/signin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/pwd"
-            android:text="登入" />
-
-        <Button
-            android:id="@+id/register"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/signin"
-            android:text="去註冊" />
 
     </RelativeLayout>
 </RelativeLayout>

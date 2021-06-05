@@ -27,11 +27,48 @@
             android:inputType="textPassword"
             android:textSize="24sp" />
 
+        <EditText
+            android:id="@+id/sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pwd"
+            android:hint="性別"
+            android:inputType="text"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sex"
+            android:hint="生日"
+            android:inputType="text"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/birth"
+            android:hint="暱稱"
+            android:inputType="text"
+            android:textSize="24sp" />
+        <EditText
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nickname"
+            android:hint="喜歡的音樂類型(古典、流行、電音、等等)"
+            android:inputType="text"
+            android:textSize="20sp" />
+
         <Button
             android:id="@+id/register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/pwd"
+            android:layout_below="@id/type"
+            android:background="@drawable/btn_type"
+            android:textColor="@color/white"
             android:text="註冊" />
 
         <Button
@@ -39,6 +76,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/register"
+            android:background="@drawable/btn_type"
+            android:textColor="@color/white"
             android:text="去登入" />
 
     </RelativeLayout>

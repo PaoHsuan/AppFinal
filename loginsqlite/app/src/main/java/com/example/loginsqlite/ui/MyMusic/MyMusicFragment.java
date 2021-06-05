@@ -13,12 +13,11 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.loginsqlite.R;
-import com.example.loginsqlite.databinding.FragmentNotificationsBinding;
+
 
 public class MyMusicFragment extends Fragment {
 
     private MyMusicViewModel MyMusicViewModel;
-    private FragmentNotificationsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -38,9 +37,4 @@ public class MyMusicFragment extends Fragment {
         return root;
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
-    }
 }
