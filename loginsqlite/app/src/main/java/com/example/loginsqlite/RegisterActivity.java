@@ -34,7 +34,11 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View view){
                 String nametext = name.getText().toString();
                 String pwdtext = password.getText().toString();
-                Boolean checkinsertdata = DB.insertData(nametext, pwdtext);
+                String sextxt = sex.getText().toString();
+                String birthtxt = birthday.getText().toString();
+                String nicktxt = nickname.getText().toString();
+                String typetxt = type.getText().toString();
+                Boolean checkinsertdata = DB.insertData(nametext, pwdtext, sextxt, birthtxt, nicktxt, typetxt);
 
                 if(checkinsertdata == true) {
                     Toast.makeText(RegisterActivity.this, "Registered success", Toast.LENGTH_SHORT).show();
@@ -42,6 +46,7 @@ public class RegisterActivity extends AppCompatActivity {
                 }
                 else{
                     Toast.makeText(RegisterActivity.this, "Registered failed", Toast.LENGTH_SHORT).show();
+                    Log.d("Debug", sextxt);
                 }
             }
         });
