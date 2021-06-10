@@ -1,9 +1,13 @@
 package com.example.loginsqlite.ui.Menu;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -12,6 +16,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.loginsqlite.HomeActivity;
+import com.example.loginsqlite.MainActivity;
+import com.example.loginsqlite.MusicTypeActivity;
 import com.example.loginsqlite.R;
 
 
@@ -34,6 +41,34 @@ public class MenuFragment extends Fragment {
                 textView.setText(s);
             }
         });*/
+        Button btnChinese = (Button)root.findViewById(R.id.chinese);
+        Button btnEnglish = (Button)root.findViewById(R.id.english);
+        Button btnKorean = (Button)root.findViewById(R.id.korean);
+        Button btnJapanese = (Button)root.findViewById(R.id.japanese);
+        Button btnClassical = (Button)root.findViewById(R.id.classical);
+        Button btnElectronic = (Button)root.findViewById(R.id.electronic);
+
+        /*btnChinese.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        String message = "1";
+                        Intent intent = new Intent(this, MusicTypeActivity.class);
+                        //intent.setClass(MenuFragment.this, MusicTypeActivity.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("MESSAGE", message);
+                        Log.d("1: ",message);
+                        intent.putExtras(bundle);
+                        //setResult(2, intent);
+                        startActivity(intent);
+                        finish();
+                    }
+                }, 1000);
+            }
+        });*/
+
         return root;
     }
 

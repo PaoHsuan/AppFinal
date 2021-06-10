@@ -1,0 +1,96 @@
+{
+	"music":[
+		{
+			"Mname":"修練愛情",
+			"singer":"林俊傑",
+			"album":"因你而在",
+			"publish":"2013年",
+			"type":"chinese"
+		},
+		{
+			"Mname":"在這座城市遺失了你",
+			"singer":"告五人",
+			"album":"運氣來的若有似無",
+			"publish":"2020年",
+			"type":"chinese"
+		},
+		{
+			"Mname":"刻在我心底的名字",
+			"singer":"盧廣仲",
+			"album":"刻在我心底的名字",
+			"publish":"2020年",
+			"type":"chinese"
+		},
+		{
+			"Mname":"Leave the Door Open",
+			"singer":"Bruno Mars, Anderson .Paak, Silk Sonic",
+			"album":"An Evening With Silk Sonic",
+			"publish":"2021年",
+			"type":"english"
+		},
+		{
+			"Mname":"Shape of You",
+			"singer":"Ed Sheeran",
+			"album":"÷",
+			"publish":"2017年",
+			"type":"english"
+		},
+		{
+			"Mname":"See You Again",
+			"singer":"Wiz Khalifa feat. Charlie Puth",
+			"album":"Furious 7",
+			"publish":"2015年",
+			"type":"english"
+		},
+		{
+			"Mname":"Butter",
+			"singer":"BTS",
+			"album":"Butter",
+			"publish":"2021年",
+			"type":"korean"
+		},
+		{
+			"Mname":"Not the End",
+			"singer":"High Light",
+			"album":"The Blowing",
+			"publish":"2021年",
+			"type":"korean"
+		},
+		{
+			"Mname":"I",
+			"singer":"Taeyeon",
+			"album":"I",
+			"publish":"2015年",
+			"type":"korean"
+		},
+		{
+			"Mname":"Pale Blue",
+			"singer":"米津玄師",
+			"album":"Pale Blue",
+			"publish":"2021年",
+			"type":"Japanese"
+		},
+		{
+			"Mname":"Lemon",
+			"singer":"米津玄師",
+			"album":"Lemon",
+			"publish":"2018年",
+			"type":"japanese"
+		},
+		{
+			"Mname":"Le Onde",
+			"singer":"Jeremy Limb",
+			"album":"The Minimal Piano",
+			"publish":"2012年",
+			"type":"classical"
+		},
+		{
+			"Mname":"Faded",
+			"singer":"Alan Walker",
+			"album":"Faded",
+			"publish":"2015年",
+			"type":"electronic"
+		}
+		
+	]
+}

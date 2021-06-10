@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Loginsqlite">
-        <activity android:name=".RegisterActivity"></activity>
-        <activity 
+        <activity android:name=".MusicTypeActivity"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity
             android:name=".HomeActivity"
             android:label="@string/title_activity_home" />
         <activity android:name=".MainActivity">

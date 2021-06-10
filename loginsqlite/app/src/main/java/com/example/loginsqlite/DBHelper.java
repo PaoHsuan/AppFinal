@@ -9,20 +9,39 @@ import android.util.Log;
 
 import androidx.annotation.Nullable;
 
+import com.example.loginsqlite.ui.User.UserFragment;
+
 public class DBHelper extends SQLiteOpenHelper {
 
     public static final String DBNAME = "Login.db";
     private final Context context;
     // create a DB file "Login.db"
+    public static final String TABLE_NAME = "users";
+    public static final String COLUMN_name = "name_c";
+    public static final String COLUMN_pwd = "pwd_c";
+    public static final String COLUMN_sex = "sex_c";
+    public static final String COLUMN_birth = "birth";
+    public static final String COLUMN_nick = "nick_c";
+    public static final String COLUMN_type = "type_c";
 
     public DBHelper(@Nullable Context context) {
         super(context, "Login.db", null, 1);
         this.context = context;
     }
 
+
+
+
     @Override
     public void onCreate(SQLiteDatabase MyDB) {
-        MyDB.execSQL("create Table users (username TEXT primary key, password TEXT, sex TEXT, birthday TEXT, nickname TEXT, type TEXT)");
+        String query = "CREATE TABLE IF NOT EXISTS " + TABLE_NAME +
+                " (" + COLUMN_name + " TEXT PRIMARY KEY AUTOINCREMENT, " +
+                COLUMN_pwd + " TEXT, " +
+                COLUMN_sex + " TEXT, " +
+                COLUMN_birth + " TEXT, " +
+                COLUMN_nick + " TEXT, " +
+                COLUMN_type + " TEXT);";
+        MyDB.execSQL(query);
         //MyDB.execSQL("create Table music(Mid TEXT primary key, Mname TEXT, singer TEXT, album TEXT, Mtype TEXT)");
     }
     // Create a Table "users", set the Table, include username (TEXT) and password (TEXT)
@@ -36,6 +55,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public boolean insertData(String username, String password, String sex, String birth, String nick, String type){  //insertData function
         SQLiteDatabase MyDB = this.getWritableDatabase();     //set the DB connection
         ContentValues contentValues = new ContentValues();    //set the "contentValues" to save the value
+
         contentValues.put("username", username);              //Put the username and password into "contentValues"
         contentValues.put("password", password);
         contentValues.put("sex", sex);
