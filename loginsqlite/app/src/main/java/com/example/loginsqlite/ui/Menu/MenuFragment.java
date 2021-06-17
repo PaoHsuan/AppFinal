@@ -48,26 +48,114 @@ public class MenuFragment extends Fragment {
         Button btnClassical = (Button)root.findViewById(R.id.classical);
         Button btnElectronic = (Button)root.findViewById(R.id.electronic);
 
-        /*btnChinese.setOnClickListener(new View.OnClickListener() {
+        btnChinese.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         String message = "1";
-                        Intent intent = new Intent(this, MusicTypeActivity.class);
+                        Intent intent = new Intent(MenuFragment.this.getContext(), MusicTypeActivity.class);
                         //intent.setClass(MenuFragment.this, MusicTypeActivity.class);
                         Bundle bundle = new Bundle();
                         bundle.putString("MESSAGE", message);
                         Log.d("1: ",message);
                         intent.putExtras(bundle);
-                        //setResult(2, intent);
                         startActivity(intent);
-                        finish();
                     }
                 }, 1000);
             }
-        });*/
+        });
+        btnEnglish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        String message = "2";
+                        Intent intent = new Intent(MenuFragment.this.getContext(), MusicTypeActivity.class);
+                        //intent.setClass(MenuFragment.this, MusicTypeActivity.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("MESSAGE", message);
+                        Log.d("1: ",message);
+                        intent.putExtras(bundle);
+                        startActivity(intent);
+                    }
+                }, 1000);
+            }
+        });
+        btnKorean.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        String message = "3";
+                        Intent intent = new Intent(MenuFragment.this.getContext(), MusicTypeActivity.class);
+                        //intent.setClass(MenuFragment.this, MusicTypeActivity.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("MESSAGE", message);
+                        Log.d("1: ",message);
+                        intent.putExtras(bundle);
+                        startActivity(intent);
+                    }
+                }, 1000);
+            }
+        });
+        btnJapanese.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        String message = "4";
+                        Intent intent = new Intent(MenuFragment.this.getContext(), MusicTypeActivity.class);
+                        //intent.setClass(MenuFragment.this, MusicTypeActivity.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("MESSAGE", message);
+                        Log.d("1: ",message);
+                        intent.putExtras(bundle);
+                        startActivity(intent);
+                    }
+                }, 1000);
+            }
+        });
+        btnClassical.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        String message = "5";
+                        Intent intent = new Intent(MenuFragment.this.getContext(), MusicTypeActivity.class);
+                        //intent.setClass(MenuFragment.this, MusicTypeActivity.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("MESSAGE", message);
+                        Log.d("1: ",message);
+                        intent.putExtras(bundle);
+                        startActivity(intent);
+                    }
+                }, 1000);
+            }
+        });
+        btnElectronic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        String message = "6";
+                        Intent intent = new Intent(MenuFragment.this.getContext(), MusicTypeActivity.class);
+                        //intent.setClass(MenuFragment.this, MusicTypeActivity.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("MESSAGE", message);
+                        Log.d("1: ",message);
+                        intent.putExtras(bundle);
+                        startActivity(intent);
+                    }
+                }, 1000);
+            }
+        });
 
         return root;
     }
