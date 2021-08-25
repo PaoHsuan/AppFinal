@@ -43,8 +43,13 @@ public class MainActivity extends AppCompatActivity {
                     Boolean checkuserpass = DB.checkusernamepassword(user, pass);
                     if(checkuserpass == true) {
                         Log.d("Debuggfff", "true");
+                        String message = name.getText().toString();
                         Toast.makeText(MainActivity.this, "Sign in successful", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("MESSAGE",message);
+                        Log.d("1: ",message);
+                        intent.putExtras(bundle);
                         startActivity(intent);
                     }else{
                         Toast.makeText(MainActivity.this, "Failed", Toast.LENGTH_SHORT).show();

@@ -3,6 +3,7 @@ package com.example.loginsqlite.ui.User;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,11 +39,13 @@ public class UserFragment extends Fragment {
         //binding = FragmentMenuBinding.inflate(inflater, container, false);
         View root = inflater.inflate(R.layout.fragment_user, container, false);
 
-        /*final TextView textView = root.findViewById(R.id.text_user);
-        UserViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        //final TextView textView = root.findViewById(R.id.text_user);
+        /*UserViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+                Bundle bundle = getActivity().getIntent().getExtras();
+                String name = bundle.getString("MESSAGE");
+                Log.d("user",name);
             }
         });*/
 
@@ -95,10 +98,15 @@ public class UserFragment extends Fragment {
         TextView nick_d = (TextView) getView().findViewById(R.id.nick_d);
         TextView type_d = (TextView) getView().findViewById(R.id.type_d);
 
+        Bundle bundle = getActivity().getIntent().getExtras();
+        String name = bundle.getString("MESSAGE");
+        Log.d("user2",name);
 
-        Cursor c=MyDB.rawQuery("SELECT * FROM users", null);
+
+        Cursor c=MyDB.rawQuery("SELECT * FROM users WHERE username = '"+name+"'", null);
         if(c.moveToNext())
         {
+            Log.d("username",name);
             name_d.setText(c.getString(0));
             sex_d.setText(c.getString(2));
             birth_d.setText(c.getString(3));

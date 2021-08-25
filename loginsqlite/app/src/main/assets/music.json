@@ -7,21 +7,24 @@
 					"singer":"林俊傑",
 					"album":"因你而在",
 					"publish":"2013年",
-					"type":"chinese"
+					"type":"chinese",
+					"cover_image": "https://hips.hearstapps.com/amv-prod-elletw.s3.amazonaws.com/new-dossier/_1_64906.jpg"
 				},
 				{
 					"Mname":"在這座城市遺失了你",
 					"singer":"告五人",
 					"album":"運氣來的若有似無",
 					"publish":"2020年",
-					"type":"chinese"
+					"type":"chinese",
+					"cover_image":"https://i.ytimg.com/vi/PlCbgZxonJs/maxresdefault.jpg"
 				},
 				{
 					"Mname":"刻在我心底的名字",
 					"singer":"盧廣仲",
 					"album":"刻在我心底的名字",
 					"publish":"2020年",
-					"type":"chinese"
+					"type":"chinese",
+					"cover_image":"https://i.kfs.io/album/global/84443882,0v1/fit/500x500.jpg"
 				}
 			],
 			"english": [
@@ -30,21 +33,24 @@
 					"singer":"Bruno Mars, Anderson .Paak, Silk Sonic",
 					"album":"An Evening With Silk Sonic",
 					"publish":"2021年",
-					"type":"english"
+					"type":"english",
+					"cover_image":"https://i.kfs.io/album/global/109014958,2v1/fit/500x500.jpg"
 				},
 				{
 					"Mname":"Shape of You",
 					"singer":"Ed Sheeran",
 					"album":"÷",
 					"publish":"2017年",
-					"type":"english"
+					"type":"english",
+					"cover_image":"https://photox.pchome.com.tw/imgdata/czo2NDoidzAzUmdSYXlMbENydnZOZTlzV2tMN09yUFpLbmJQQTZtQjQ1ZlRVaGRGS3p2T1hTZlNVdFo2cTNaNzByNS82RSI7.jpg"
 				},
 				{
 					"Mname":"See You Again",
 					"singer":"Wiz Khalifa feat. Charlie Puth",
 					"album":"Furious 7",
 					"publish":"2015年",
-					"type":"english"
+					"type":"english",
+					"cover_image":"https://edmboost.org/wp-content/uploads/2020/01/1-440-716x708.jpg"
 				}
 			],
 			"korean": [
@@ -53,21 +59,24 @@
 					"singer":"BTS",
 					"album":"Butter",
 					"publish":"2021年",
-					"type":"korean"
+					"type":"korean",
+					"cover_image":"https://img.mymusic.net.tw/mms/album/L/570/5162570.jpg"
 				},
 				{
 					"Mname":"Not the End",
 					"singer":"High Light",
 					"album":"The Blowing",
 					"publish":"2021年",
-					"type":"korean"
+					"type":"korean",
+					"cover_image":"https://images.genius.com/b609cf8d9085fc0fbe866237a51381c9.1000x1000x1.jpg"
 				},
 				{
 					"Mname":"I",
 					"singer":"Taeyeon",
 					"album":"I",
 					"publish":"2015年",
-					"type":"korean"
+					"type":"korean",
+					"cover_image":"https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/002/020/36/0020203634.jpg&v=5a6feaf1&w=280&h=280"
 				}
 			],
 			"japanese": [
@@ -76,14 +85,16 @@
 					"singer":"米津玄師",
 					"album":"Pale Blue",
 					"publish":"2021年",
-					"type":"Japanese"
+					"type":"Japanese",
+					"cover_image":"https://truth.bahamut.com.tw/s01/202105/67d8c563df392b75ff0b9bde3ef4cc7d.JPG"
 				},
 				{
 					"Mname":"Lemon",
 					"singer":"米津玄師",
 					"album":"Lemon",
 					"publish":"2018年",
-					"type":"japanese"
+					"type":"japanese",
+					"cover_image":"https://upload.wikimedia.org/wikipedia/zh/d/dd/Lemon_by_Kenshi_Yonezu_cover.jpg"
 				}
 			],
 			"classical": [
@@ -92,7 +103,8 @@
 					"singer":"Jeremy Limb",
 					"album":"The Minimal Piano",
 					"publish":"2012年",
-					"type":"classical"
+					"type":"classical",
+					"cover_image":"https://m.media-amazon.com/images/I/612ipGXUhhL._SS500_.jpg"
 				}
 			],
 			"electronic": [
@@ -101,7 +113,8 @@
 					"singer":"Alan Walker",
 					"album":"Faded",
 					"publish":"2015年",
-					"type":"electronic"
+					"type":"electronic",
+					"cover_image":"https://2.bp.blogspot.com/-zEGSruGyqNA/WGS2SLBupwI/AAAAAAAAApU/aqo89sdE2d4U9rerY3SMIbAu97fQEAgVQCLcB/s1600/alam-walker-faded-song-lyrics-750750.jpg"
 				}
 			]
 
